@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  background: linear-gradient(to left, #FF3EA5, #4942E4);
 }
 
 .container {
@@ -15,7 +15,7 @@ body {
   background: rgba(255, 255, 255, 0.25);
   border-radius: 15px;
   padding: 20px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(13px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
@@ -47,20 +47,23 @@ input {
 }
 
 .button {
-  background-color: #ffffff;
-  border: none;
-  color: #333;
-  text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 10px 10px;
-  cursor: pointer;
   padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  color: 0F0F0F;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  background: #9400FF;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3),
+              0 5px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
 .button:hover {
-  background-color: #f0f0f0;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.21),
+              0 8px 12px rgba(0, 0, 0, 0.08);
 }
